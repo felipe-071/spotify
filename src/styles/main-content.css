@@ -1,0 +1,244 @@
+/* HEADER */
+#main-container{
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 320px;
+    margin-right: 56px;
+}
+
+.header__navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 10px;
+    background-color: #121212;
+    border-radius: 8px;
+}
+
+.header__navigation .navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__navigation .navigation .arrow-left{
+    margin-right: 1.25rem;
+}
+
+.arrow-left, .arrow-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--bg-icon);
+    background-color: var(--bg--arrow-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header__login{
+    display: flex;
+    align-items: center;
+}
+
+.header__search{
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 48px;
+    margin-left: 8px;
+    background-color: #242424;
+    border-radius: 500px;
+    border: 1px solid transparent;
+}
+
+.header__search img{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.header__search input{
+    background: transparent;
+    border: none;
+    padding: 0 100px 0 12px;
+    color: #FFF;
+    text-overflow: ellipsis; /*Isso serve  para não mostrar o texto inteiro. Ele fica com reticências. Ele só funciona com o overflow*/
+    overflow: hidden;
+    white-space: nowrap; /*Isso faz com que as linhas não quebrem*/
+    outline: none;
+}
+
+.header__login .subscribe{
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 32px;
+    outline: none;
+    border: none;
+}
+
+.header__login .login{
+    width: 100px;
+    height: 48px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+}
+
+.playlist-container{
+    background-color: #121212;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 10px 24px 0 24px;
+    height: 68vh;
+}
+
+.playlist-container .playlist{
+    margin: 24px 0;
+}
+
+.playlist-container .playlist h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.playlist-container .playlist h2{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 40px 0 8px 0;
+}
+
+/* .playlist-container .music-list{
+   
+} */
+
+.music-list__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    max-height: 43vh;
+    overflow: auto;
+    margin: 0 auto;
+    padding: 0 10px 20px 0;
+    justify-items: center;
+}
+
+.playlist-container .music-list .music-list__content::-webkit-scrollbar{
+    transition: 0.3s ease;
+    background-color: transparent;
+    width: 10px;
+}
+
+.playlist-container .music-list .music-list__content::-webkit-scrollbar-thumb{
+    transition: 0.3s ease;
+    background-color: #666;
+}
+
+.playlist-container .music-list .music-list__content::-webkit-scrollbar-thumb:hover{
+    transition: 0.3s ease;
+    background-color: #888;
+}
+
+.playlist-container .music-list .music-list__content::-webkit-scrollbar-thumb:active{
+    background-color: #a2a2a2;
+    transition: 0.3s ease;
+}
+
+
+.playlist-container .music-list .music-list__content:hover{
+    overflow: auto;
+}
+
+
+.playlist-container .cards{
+    width: 220px;
+    background-color: white;
+    height: 200px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.playlist-container .cards span{
+    color: #FFF;
+    position: absolute;
+    font-weight: 700;
+    padding: 16px;
+    font-size: 24px;
+}
+
+.playlist-container .cards .cardImg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 107px;
+    height: auto;
+    transform: rotate(25deg) translate(18%, -2%);
+}
+
+.playlist-container .card1{
+    background-color: #006450;
+}
+
+.playlist-container .card2{
+    background-color: #8400E7;
+}
+
+.playlist-container .card3{
+    background-color: #1E3264;
+}
+
+.playlist-container .card4{
+    background-color: #8C1932;
+}
+
+.playlist-container .card5{
+    background-color: #E8115B;
+}
+
+.playlist-container .card6{
+    background-color: #537AA1;
+}
+
+.playlist-container .card7{
+    background-color: #8E66AC;
+}
+
+.playlist-container .card8{
+    background-color: #148A08;
+}
+
+.playlist-container .card9{
+    background-color: #1E3264;
+}
+
+.playlist-container .card10{
+    background-color: #E91429;
+}
+
+.playlist-container .card11{
+    background-color: #503750;
+}
+
+.playlist-container .card12{
+    background-color: #D84000;
+}
+
+.playlist-container .card13{
+    background-color: #BA5D07;
+}
+
+.playlist-container .card14{
+    background-color: #001E50;
+}
+
+.playlist-container .card15{
+    background-color: #3C1E50;
+}

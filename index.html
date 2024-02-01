@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Imersão</title>
+
+    <!-- Aqui, a folha CSS com maior nível de semântica é sempre a última a ser referenciada. 
+        O reset.css deve ser o primeiro -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/vars.css"> <!-- Deve vir antes do último estilo a ser carregado -->
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css">
+    <link rel="stylesheet" href="./src/styles/media-queries.css"> <!--O Media Queries deve ser declarado após os  outros arquivos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+        integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <nav class="sidebar__navigation">
+            <div class="logo">
+                <a href="">
+                    <img src="./src/assets/icons/logo-spotify.png" alt="Logo do Spotify">
+                </a>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="fa fa-home"></span>
+                        <span>Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="fa fa-search"></span>
+                        <span>Buscar</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="library">
+            <div class="library__content">
+                <button class="library__button">
+                    <span class="fa fas fa-book"></span>
+                    <span>Sua biblioteca</span>
+                </button>
+                <span class="fa fa-plus"></span>
+            </div>
+            <section class="section-playlist">
+                <div class="section-playlist__content">
+                    <span class="text title">Crie sua primeira playlist</span>
+                    <span class="text subtitle">É fácil, vamos te ajudar</span>
+                    <button class="section-playlist__button">
+                        <span>Criar playlist</span>
+                    </button>
+                </div>
+            </section>
+
+            <div class="cookies">
+                <a href="">Cookies</a>
+            </div>
+
+            <div class="languages">
+                <button class="languages__button">
+                    <span class="fa fa-globe"></span>
+                    <span>Portugês do Brasil</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <main>
+        <div id="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+                
+                    <div class="header__search">
+                        <img src="./src/assets/icons/search.png" alt=""> <!--Esta imagem não necessita de "alt", porque não compõe uma informação da tela. 
+                            Portanto, não possui valor de imagem. A forma ideal de carregar imagens como essa é através do CSS
+                            como background-image, segundo a professora.-->
+                            <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
+                    </div>
+
+                    <div class="header__login">
+                        <button class="subscribe">Inscreva-se</button>
+                        <button class="login">Entrar</button>
+                    </div>
+                
+            </nav>
+
+            <div class="playlist-container">
+                <!--Por algum motivo, ao invés de definir essa div como a responsável pelo
+                    alinhamento de seus filhos e pela cor de background e espaçamento, o pessoal da Alura fez uma div
+                    para cada uma dessas funções. É interessante aderir, por parecer que é uma boa prática. Farei isso 
+                    nas próximas vezes.-->
+                <div class="playlist">
+                    <h1>Bom Dia</h1> 
+                    <h2>Navegar por todas as seções</h2>
+                </div>
+
+                <div class="music-list">
+                    <section class="music-list__content">
+                        <div class="cards card1">
+                            <span>Boas festas</span>
+                            <img class="cardImg" src="./src/assets/playlist/1.jpeg" alt="Músicas natalinas">
+                        </div>
+                        <div class="cards card2">
+                            <span>Feitos para você</span>
+                            <img class="cardImg" src="./src/assets/playlist/2.png" alt="Músicas natalinas">
+                        </div>
+                        <div class="cards card3">
+                            <span>Lançamentos</span>
+                            <img class="cardImg" src="./src/assets/playlist/3.jpeg" alt="Músicas natalinas">
+                        </div>
+                        <div class="cards card4">
+                            <span>Creators</span>
+                            <img class="cardImg" src="./src/assets/playlist/4.jpeg" alt="Músicas natalinas">
+                        </div>
+                        <div class="cards card5">
+                            <span>Para treinar</span>
+                            <img class="cardImg" src="./src/assets/playlist/5.jpeg" alt="Músicas natalinas">
+                        </div>
+                        <div class="cards card6">
+                            <span>Podcasts</span>
+                            <img class="cardImg" src="./src/assets/playlist/6.jpeg" alt="Músicas natalinas">
+                        </div>
+                        <div class="cards card7">
+                            <span>Sertanejo</span>
+                            <img class="cardImg" src="./src/assets/playlist/7.jpeg" alt="Músicas natalinas">
+                        </div>
+                        <div class="cards card8">
+                            <span>Samba e Pagode</span>
+                            <img class="cardImg" src="./src/assets/playlist/8.jpeg" alt="Músicas natalinas">
+                        </div>
+                        <div class="cards card9">
+                            <span>Funk</span>
+                            <img class="cardImg" src="./src/assets/playlist/9.jpeg" alt="Músicas natalinas">
+                        </div>
+                        <div class="cards card10">
+                            <span>MPB</span>
+                            <img class="cardImg" src="./src/assets/playlist/10.jpeg" alt="Músicas natalinas">
+                        </div>
+                        <div class="cards card11">
+                            <span>Rock</span>
+                            <img class="cardImg" src="./src/assets/playlist/11.jpeg" alt="Músicas natalinas">
+                        </div>
+                        <div class="cards card12">
+                            <span>Hip Hop</span>
+                            <img class="cardImg" src="./src/assets/playlist/12.jpeg" alt="Músicas natalinas">
+                        </div>
+                        <div class="cards card13">
+                            <span>Indie</span>
+                            <img class="cardImg" src="./src/assets/playlist/13.jpeg" alt="Músicas natalinas">
+                        </div>
+                        <div class="cards card14">
+                            <span>Relax</span>
+                            <img class="cardImg" src="./src/assets/playlist/14.jpeg" alt="Músicas natalinas">
+                        </div>
+                        <div class="cards card15">
+                            <span>Música Latina</span>
+                            <img class="cardImg" src="./src/assets/playlist/15.jpeg" alt="Músicas natalinas">
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__content">
+            <p class="footer__title">TESTAR O PREMIUM DE GRAÇA</p>
+            <p class="footer__subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito</p>
+        </div>
+        
+        <button><span>Inscreva-se grátis</span></button>
+    </footer>
+</body>
+
+</html>
